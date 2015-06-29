@@ -1,33 +1,92 @@
+<html>
+<head>
 
-<!-- saved from url=(0042)https://proxy.lofar.eu/aartfaac/index.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-		<script>
-			function autoReloadImage( id, timeout )
-			{
-				var img = document.getElementById(id);
-				timeout *= 1000;
-				setTimeout(function() {reloadImage( img, img.src, timeout )}, timeout);
-			}
-			function reloadImage( img, src, timeout )
-			{
-				img.src = src + "?" + new Date().getTime();
-				setTimeout(function() {reloadImage( img, src, timeout )}, timeout);
-			}
-		</script>
-	<style type="text/css"></style></head>
-	<body>
-		<img src="./index_files/lag.png" id="img1">
-		<img src="./index_files/chan.png" id="img2">
-		<img src="./index_files/corr.png" id="img3">
-		<img src="./index_files/fft.png" id="img4">
-		<img src="./index_files/diff.png" id="img5">
-		<script>
-			autoReloadImage("img1", 3);
-			autoReloadImage("img2", 3);
-			autoReloadImage("img3", 3);
-			autoReloadImage("img4", 3);
-			autoReloadImage("img5", 3);
-		</script>
-	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-</body></html>
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+
+
+	<script>
+		function autoReloadImage( id, timeout )
+		{
+			var img = document.getElementById(id);
+			timeout *= 1000;
+			setTimeout(function() {reloadImage( img, img.src, timeout )}, timeout);
+		}
+		function reloadImage( img, src, timeout )
+		{
+			img.src = src + "?" + new Date().getTime();
+			setTimeout(function() {reloadImage( img, src, timeout )}, timeout);
+		}
+	</script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<h1>AARTFAAC telescope live feed</h1>
+		</div>
+	</div>
+	<div class="row">
+
+		<div class="col-xs-4">
+			<a href="#" class="thumbnail">
+				<img src="index_files/lag.png">
+			</a>
+		</div>
+
+		<div class="col-xs-4">
+			<a href="#" class="thumbnail">
+				<img src="index_files/chan.png">
+			</a>
+		</div>
+
+		<div class="col-xs-4">
+			<a href="#" class="thumbnail">
+				<img src="index_files/corr.png">
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4">
+			<a href="#" class="thumbnail">
+				<img src="index_files/fft.png">
+			</a>
+		</div>
+
+		<div class="col-xs-4">
+
+			Hier een verhaaltje wat wat is
+		</div>
+
+		<div class="col-xs-4">
+			<a href="#" class="thumbnail">
+				<img src="index_files/diff.png">
+			</a>
+		</div>
+	</div>
+
+</div>
+
+
+<script>
+	autoReloadImage("img1", 3);
+	autoReloadImage("img2", 3);
+	autoReloadImage("img3", 3);
+	autoReloadImage("img4", 3);
+	autoReloadImage("img5", 3);
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
