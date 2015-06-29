@@ -1,0 +1,33 @@
+
+<!-- saved from url=(0042)https://proxy.lofar.eu/aartfaac/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<script>
+			function autoReloadImage( id, timeout )
+			{
+				var img = document.getElementById(id);
+				timeout *= 1000;
+				setTimeout(function() {reloadImage( img, img.src, timeout )}, timeout);
+			}
+			function reloadImage( img, src, timeout )
+			{
+				img.src = src + "?" + new Date().getTime();
+				setTimeout(function() {reloadImage( img, src, timeout )}, timeout);
+			}
+		</script>
+	<style type="text/css"></style></head>
+	<body>
+		<img src="./index_files/lag.png" id="img1">
+		<img src="./index_files/chan.png" id="img2">
+		<img src="./index_files/corr.png" id="img3">
+		<img src="./index_files/fft.png" id="img4">
+		<img src="./index_files/diff.png" id="img5">
+		<script>
+			autoReloadImage("img1", 3);
+			autoReloadImage("img2", 3);
+			autoReloadImage("img3", 3);
+			autoReloadImage("img4", 3);
+			autoReloadImage("img5", 3);
+		</script>
+	
+
+</body></html>
